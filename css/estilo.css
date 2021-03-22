@@ -1,0 +1,179 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen por defecto varias etiquetas de HTML5 */
+body, h1, h2, h3, h4, h5, h6, p, figure, img { margin: 0; }
+
+
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; right: 15px; bottom: 15px; z-index: 99998; }
+aside#boton-wp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; background: #00bb2d; border-radius: 50%; text-align: center; padding: 10px 0; transition: all 0.3s ease-in; }
+aside#boton-wp a i { font-size: 1.5em; line-height: 1em; color: #fff; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { background: #000; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover i { color: #00bb2d; transition: all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background:#c54536; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: #fff; background: #a3002c; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { background: #c54536; transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: #fff; background: #a3002c; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #c54536; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #a3002c; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header con Logo y Menú */
+header { width: 100%; margin: 0; float: none; left: 0; top: 0; z-index: 99990;overflow: hidden;
+background: url(../img/banner.JPG) no-repeat bottom center fixed #C54536; background-size: cover; }
+
+header.no-sticky { height: 500px; position: relative;}
+header.sticky { height: 110px; position: fixed;}
+
+head div#capa-superior {width: 100%; height: 500px; display: block; margin: 0; float: none; position: absolute; top: 0 ; left: 0; z-index: 2;}
+
+header div#capa-superior article { width: 1100px; height: 90px; margin: 0 auto; float: none; position: relative; }
+
+header div#capa-superior article figure { width: 200px; height: 60px; margin: 0; float: left; position: relative; top: 5px; }
+header div#capa-superior article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header div#capa-superior article figure a img { width: auto; height: 120px; margin: 0 auto; float: none; position: relative; display: block; }
+
+header div#capa-superior article nav { width: 550px; height: 40px; margin: 0; float: right; position: relative; top: 40px; }
+header div#capa-superior article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; text-decoration: none; color: #ffffff; font-weight: 700; font-size: 1em; line-height: 1em; text-align: center; padding: 12px 0; border-bottom: solid 2px rgb(165, 58, 58); transition: all 0.3s ease-in; }
+header div#capa-superior article nav a:hover {background:  rgb(165, 58, 58); display: block; padding: 00.5rem 1rem;transition: all 0.4s linear;border-radius: 10px;}
+
+header div#capa-superior div#titular { width: 1100px; height: auto; margin: 28vh auto; float: none; position: relaive; }
+header div#capa-superior div#titular h1 { text-align: center;font-size: 3em; color: rgb(255, 255, 255);line-height: 1em;font-weight: 400;}
+
+
+/* Caja Main */
+main { width: 100%;height: auto;margin: 100px auto 0;  float: none; position: relative;}
+main section#Ilustración-digital { width: 100%;  height: auto;margin: 20px 0;float: none; position: relative;     display: block;}
+main section#Ilustración-digital article { width: 1050px;height: auto;margin: 0 auto 0 290px;float: none; position: relative;}
+main section#Ilustración-digital article div#ancla-Ilustración-digital {width: 1050px; height: auto; margin: 0 -60px 0;float: none;
+    position: relative;}
+    main section#Ilustración-digital article div.item-1 { width: 170px;  height: 500px; margin: 0 40px 0 0; float: none; position: relative;
+     display: inline-block;}   
+    main section#Ilustración-digital article div.item-1 a { width: 300px;height: 100px;margin: 10px;float: none;position: relative;
+        display: inline-block;}
+
+    main section#óleo { width: 100%;  height: auto;margin: 10px 0;float: none; position: relative;     display: block;}
+
+    main section#óleo article { width: 1050px; height: auto;margin: 0 auto 0 290px; float: none; position: relative;}
+    main section#óleo article div#ancla-óleo {width: 105px;height: auto; margin: 0 -60px 0; float: none; position: relative;}
+    main section#óleo article div#ancla-óleo {width: 105px;height: auto;margin: 0 -60px 0; float: none;position: relative;}
+    main section#óleo article div.item-1 {width: 170px;height: 500px;margin: 0 50px 0 0;float: none;position: relative;display: inline-block;}
+    main section#Belleza article div.item-1 a {  width: 300px; height: 300px;  margin: 10px;float: none; position: relative; display: inline-block;}
+      
+   
+    main { width: 100%;height: auto;margin: 800px auto 0;  float: none; position: relative;}
+    main section#otras-tecnicas { width: 100%;  height: auto;margin: 10px 0;float: none; position: relative;     display: block;}
+    main section#otras-tecnicas article { width: 1050px;height: auto;margin: 0 auto 0 290px;float: none; position: relative;}
+    main section#otras-tecnicas article div#ancla-otras-tecnicas {width: 1050px; height: auto; margin: 0 -60px 0;float: none;
+    position: relative;}
+    main section#otras-tecnicas article div.item-1 { width: 170px;  height: 500px; margin: 0 40px 0 0; float: none; position: relative;
+    display: inline-block;}   
+    main section#otras-tecnicasarticle div.item-1 a { width: 300px;height: 100px;margin: 10px;float: none;position: relative;
+            display: inline-block;}
+            
+    main section#Grafito { width: 100%;  height: auto;margin: 10px 0;float: none; position: relative;     display: block;}
+    main section#Grafito article { width: 1050px;height: auto;margin: 0 auto 0 290px;float: none; position: relative;}
+    main section#Grafito article div#ancla-Grafito {width: 1050px; height: auto; margin: 0 -60px 0;float: none;
+    position: relative;}
+    main section#Grafito article div.item-1 { width: 170px;  height: 500px; margin: 0 40px 0 0; float: none; position: relative;
+    display: inline-block;}   
+     main section#Grafito article div.item-1 a { width: 300px;height: 100px;margin: 10px;float: none;position: relative;
+     display: inline-block;}
+        
+          
+    
+    
+
+
+/* Componente Footer  */
+footer { width: 100%; height: 250px;margin: 0 auto; position: relative;background: url(../img/footer\ 2.jpg) no-repeat center center fixed rgba(184, 40, 40, 0.685);
+    background-size: cover;    display: block;}
+   
+    
+   
+footer article { width: 80%; }
+    footer article { width: 150px;height: auto; margin: 0 auto;  float: none;position: relative;}
+    footer article div#superior-footer { width: 100%;height: 200px;  margin: 0 auto 30px; float: none; position: relative;}
+    footer article div#superior-footer div.cajas-footer { width: 230px;height: 200px; margin: 0 60px 0 0; float: left; position: relative;}
+    footer article div#superior-footer div.cajas-footer img { width: auto;height: 150px;margin: 100px 10px;display: block;float: none; position: relative;}
+    footer article div#superior-footer div.cajas-footer a { width: 70px;width: 70px;height: auto;float: none;position: relative;display: block;text-align: right; bottom: 180px; font-size: 1.8em;margin: 100px; text-decoration: none;color: #fdfdfd;transition: all 0.2s ease-in;   
+        
+        
+        
+        
+        
+        
+       
+        
+       
+
+        
+       
+     
+       
+       
+        
+      
+       
+       
+       
+
+
+
+
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 40%; }
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    aside#menu-moviles { display: block; }
+
+
+   
+
+       
+      
+        
+        
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
